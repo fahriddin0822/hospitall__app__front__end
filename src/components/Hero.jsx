@@ -9,7 +9,7 @@ import paper from "../assets/Group (6).svg";
 import search from "../assets/search.svg";
 import bg__services from "../assets/bg element.svg";
 import { BiColor } from "react-icons/bi";
-import asd from "../assets/trafalgar-illustration sec02 1.svg"
+import asd from "../assets/trafalgar-illustration sec02 1.svg";
 
 const HeroSection = () => {
   return (
@@ -138,18 +138,18 @@ const HeroSection = () => {
               <h2 className="text-3xl font-bold text-titleBlue m-4">
                 Virtual healthcare Saviour for you
               </h2>
+          <div className="rec w-[16%] h-1 bg-black m-1 rounded-full ml-4"></div>
               <p className="text-sm text-descriptionblue m-4">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                 commodo ligula eget dolor. Aenean massa.
               </p>
             </div>
-            <div className="rec w-[10%] h-1 bg-black m-1 rounded-full m-auto"></div>
+            
             <button className="col-span-3 border-2 border-blue-500 bg-white text-black rounded-full px-6 py-3 mt-6 mx-auto hover:bg-blue-500 hover:text-white">
-            Learn more
-          </button>
+              Learn more
+            </button>
           </div>
         </div>
-        
       </div>
     </div>
   );
