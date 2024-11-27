@@ -19,6 +19,9 @@ export default {
         title_service:'rgba(204, 210, 233, 1)',
         ...colors,
         redHeader:"red"
+      },
+      fontFamily:{
+        "alice":["alice"]
       }
     },
   },

@@ -25,10 +25,10 @@ const HeroSection = () => {
         <div className="w-1/2 flex justify-center align-middle m-auto">
           <div className="w-2/3 h-2/3 flex flex-col justify-between">
             <div>
-              <h2 className="text-3xl font-bold text-titleBlue m-4">
+              <h2 className="text-3xl font-bold text-titleBlue m-4 font-alice">
                 Virtual healthcare Saviour for you
               </h2>
-              <p className="text-sm text-descriptionblue m-4">
+              <p className="text-sm text-descriptionblue m-4 font-alice">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                 commodo ligula eget dolor. Aenean massa.
               </p>
