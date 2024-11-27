@@ -8,10 +8,11 @@ import emergency from "../assets/Frame (4).svg";
 import paper from "../assets/Group (6).svg";
 import search from "../assets/search.svg";
 import bg__services from "../assets/bg element.svg";
+import { BiColor } from "react-icons/bi";
 
 const HeroSection = () => {
   return (
-    <div className="wrapper">
+    <div className="wrapper max-w-7xl m-auto">
       <div
         className=" landing flex bg-white overflow-hidden"
         style={{
@@ -42,65 +43,78 @@ const HeroSection = () => {
         </div>
       </div>
       {/* //=================================================================== */}
-      <div
-        className="services my-12 p-6 grid grid-cols-3 gap-6"
-        style={{
-          backgroundImage: `url(${bg__services})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "start",
-          height: "2xl",
-        }}
-      >
-        <div className="flex flex-col items-center">
-          <img src={search} alt="" />
-          <h3 className="text-lg font-medium mb-2">Search doctor</h3>
-          <p className="text-sm text-descriptionblue text-center">
-            Choose your doctor from thousands of specialist doctors and trusted
-            hospitals
+      <div className="services">
+        <div className="title flex flex-col justify-center items-center">
+          <h2 className="text-customBlue text-3xl">Services we Offer</h2>
+          <div className="rec w-[4%] h-1 bg-black m-1 rounded-full"></div>
+          <p className="text-title_service">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.{" "}
           </p>
         </div>
-        <div className="flex flex-col items-center">
-          <img src={drug} alt="" />
-          <h3 className="text-lg font-medium mb-2">Online pharmacy</h3>
-          <p className="text-sm text-descriptionblue text-center">
-            Buy your medicines with our online pharmacy with a simple delivery
-            system
-          </p>
+        <div
+          className=" my-12 p-6 grid grid-cols-3 gap-6"
+          style={{
+            backgroundImage: `url(${bg__services})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "left 0px top -240px",
+            backgroundSize: "70%",
+            height: "100%",
+            width: "100%",
+            overflow: "auto",
+          }}
+        >
+          <div className="flex flex-col items-center w-[300px] bg-white rounded-xl py-6 shadow-xl">
+            <img src={search} alt="" />
+            <h3 className="text-lg font-medium mb-2">Search doctor</h3>
+            <p className="text-sm text-textGrey text-center">
+              Choose your doctor from thousands of specialist doctors and
+              trusted hospitals
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-[300px] bg-white rounded-xl py-6 shadow-xl">
+            <img src={drug} alt="" />
+            <h3 className="text-lg font-medium mb-2">Online pharmacy</h3>
+            <p className="text-sm text-textGrey text-center">
+              Buy your medicines with our online pharmacy with a simple delivery
+              system
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-[300px] bg-white rounded-xl py-6 shadow-xl">
+            <img src={consultation} alt="" />
+            <h3 className="text-lg font-medium mb-2">Consultation</h3>
+            <p className="text-sm text-textGrey text-center">
+              Free consultation with our trusted doctors and get the best
+              recommendations
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-[300px] bg-white rounded-xl py-6 shadow-xl">
+            <img src={info} alt="" />
+            <h3 className="text-lg font-medium mb-2">Emergency care</h3>
+            <p className="text-sm text-textGrey text-center">
+              You can get 24/7 urgent care for yourself or your children and
+              your lovely family
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-[300px] bg-white rounded-xl py-6 shadow-xl">
+            <img src={emergency} alt="" />
+            <h3 className="text-lg font-medium mb-2">Details info</h3>
+            <p className="text-sm text-textGrey text-center">
+              Free consultation with our trusted doctors and get the best
+              recommendations
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-[300px] bg-white rounded-xl py-6 shadow-xl">
+            <img src={paper} alt="" />
+            <h3 className="text-lg font-medium mb-2">Tracking</h3>
+            <p className="text-sm text-textGrey text-center">
+              Track and save your medical history and health data
+            </p>
+          </div>
+          <button className="col-span-3 border-2 border-blue-500 bg-white text-black rounded-full px-6 py-3 mt-6 mx-auto hover:bg-blue-500 hover:text-white">
+            Learn more
+          </button>
         </div>
-        <div className="flex flex-col items-center">
-          <img src={consultation} alt="" />
-          <h3 className="text-lg font-medium mb-2">Consultation</h3>
-          <p className="text-sm text-descriptionblue text-center">
-            Free consultation with our trusted doctors and get the best
-            recommendations
-          </p>
-        </div>
-        <div className="flex flex-col items-center">
-          <img src={info} alt="" />
-          <h3 className="text-lg font-medium mb-2">Emergency care</h3>
-          <p className="text-sm text-descriptionblue text-center">
-            You can get 24/7 urgent care for yourself or your children and your
-            lovely family
-          </p>
-        </div>
-        <div className="flex flex-col items-center">
-          <img src={emergency} alt="" />
-          <h3 className="text-lg font-medium mb-2">Details info</h3>
-          <p className="text-sm text-descriptionblue text-center">
-            Free consultation with our trusted doctors and get the best
-            recommendations
-          </p>
-        </div>
-        <div className="flex flex-col items-center">
-          <img src={paper} alt="" />
-          <h3 className="text-lg font-medium mb-2">Tracking</h3>
-          <p className="text-sm text-descriptionblue text-center">
-            Track and save your medical history and health data
-          </p>
-        </div>
-        <button className="col-span-3 bg-blue-500 text-white rounded-full px-6 py-3 mt-6 mx-auto">
-          Learn more
-        </button>
       </div>
     </div>
   );
