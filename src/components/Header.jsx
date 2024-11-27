@@ -3,7 +3,7 @@ import logo from "../assets/Logo Shapes 56.svg";
 
 const Header = () => {
   return (
-    <header className="bg-white max-w-7xl m-auto">
+    <header className="bg-redHeader max-w-7xl m-auto">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center py-6 px-4">
         {/* Logo */}
         <div className="logo flex flex-row items-center">

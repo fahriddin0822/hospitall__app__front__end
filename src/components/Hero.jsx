@@ -15,10 +15,9 @@ const HeroSection = () => {
   return (
     <div className="wrapper max-w-7xl m-auto">
       <div
-        className=" landing flex bg-white overflow-hidden"
+        className=" landing flex bg-white overflow-hidden bg-dots bg-no-repeat"
         style={{
-          backgroundImage: `url(${element__dots})`,
-          backgroundRepeat: "no-repeat",
+          backgroundImage: ``,
           backgroundPosition: "start",
           height: "auto",
         }}
@@ -44,10 +43,10 @@ const HeroSection = () => {
         </div>
       </div>
       {/* //=================================================================== */}
-      <div className="services">
+      <div className="services mt-[100px]">
         <div className="title flex flex-col justify-center items-center">
           <h2 className="text-customBlue text-3xl">Services we Offer</h2>
-          <div className="rec w-[4%] h-1 bg-black m-1 rounded-full"></div>
+          <div className="rec w-[4%] h-1 bg-black m-1 rounded-full mt-4 mb-2"></div>
           <p className="text-title_service">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa.{" "}
@@ -121,7 +120,7 @@ const HeroSection = () => {
       {/* ==================================================== */}
 
       <div
-        className=" landing flex bg-white overflow-hidden"
+        className=" landing flex bg-white overflow-hidden mt-[100px]"
         style={{
           backgroundImage: `url(${element__dots})`,
           backgroundRepeat: "no-repeat",
@@ -138,13 +137,13 @@ const HeroSection = () => {
               <h2 className="text-3xl font-bold text-titleBlue m-4">
                 Virtual healthcare Saviour for you
               </h2>
-          <div className="rec w-[16%] h-1 bg-black m-1 rounded-full ml-4"></div>
-              <p className="text-sm text-descriptionblue m-4">
+              <div className="rec w-[16%] h-1 bg-black rounded-full ml-4 "></div>
+              <p className="text-sm text-descriptionblue m-4 mt-2">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                 commodo ligula eget dolor. Aenean massa.
               </p>
             </div>
-            
+
             <button className="col-span-3 border-2 border-blue-500 bg-white text-black rounded-full px-6 py-3 mt-6 mx-auto hover:bg-blue-500 hover:text-white">
               Learn more
             </button>
