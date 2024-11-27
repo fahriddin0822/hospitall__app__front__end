@@ -9,6 +9,7 @@ import paper from "../assets/Group (6).svg";
 import search from "../assets/search.svg";
 import bg__services from "../assets/bg element.svg";
 import { BiColor } from "react-icons/bi";
+import asd from "../assets/trafalgar-illustration sec02 1.svg"
 
 const HeroSection = () => {
   return (
@@ -115,6 +116,40 @@ const HeroSection = () => {
             Learn more
           </button>
         </div>
+      </div>
+
+      {/* ==================================================== */}
+
+      <div
+        className=" landing flex bg-white overflow-hidden"
+        style={{
+          backgroundImage: `url(${element__dots})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "start",
+          height: "auto",
+        }}
+      >
+        <div className="w-1/2">
+          <img src={asd} alt="Virtual healthcare" />
+        </div>
+        <div className="w-1/2 flex justify-center align-middle m-auto">
+          <div className="w-2/3 h-2/3 flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl font-bold text-titleBlue m-4">
+                Virtual healthcare Saviour for you
+              </h2>
+              <p className="text-sm text-descriptionblue m-4">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa.
+              </p>
+            </div>
+            <div className="rec w-[10%] h-1 bg-black m-1 rounded-full m-auto"></div>
+            <button className="col-span-3 border-2 border-blue-500 bg-white text-black rounded-full px-6 py-3 mt-6 mx-auto hover:bg-blue-500 hover:text-white">
+            Learn more
+          </button>
+          </div>
+        </div>
+        
       </div>
     </div>
   );
